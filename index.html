@@ -1,13 +1,622 @@
-<!doctype html>
-<html lang="en" class="bg-slate-50 scroll-smooth">
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Developer Portfolio</title>
+    <title>Kannara Kheng || Page d'accueil</title>
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <!-- navbar -->
+    <nav class="nav" id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <img src="./images/hero-img-small.png" class="hero-photo" alt="kannara kheng photo" />
+          <button class="nav-btn" id="nav-btn">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- nav-links -->
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">accueil</a>
+          </li>
+          <li>
+            <a href="about.html">a propos</a>
+          </li>
+          <li>
+            <a href="projects.html">projets</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end of navbar -->
+    <!-- sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div>
+        <button class="close-btn" id="close-btn">
+          <i class="fas fa-times"></i>
+        </button>
+        <!-- nav-links -->
+        <ul class="sidebar-links">
+          <li>
+            <a href="index.html">accueil</a>
+          </li>
+          <li>
+            <a href="about.html">a propos</a>
+          </li>
+          <li>
+            <a href="projects.html">projets</a>
+          </li>
+          <li>
+            <a href="contact.html">contact</a>
+          </li>
+        </ul>
+        <!-- social icons -->
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.linkedin.com" class="social-icon">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com" class="social-icon">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.github.com" class="social-icon">
+              <i class="fab fa-x-twitter"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <!-- end of sidebar -->
+    <!-- header -->
+    <header class="hero">
+      <div class="section-center hero-center">
+        <article class="hero-info">
+          <div class="underline"></div>
+          <h1>Kannara KHENG</h1>
+          <h4>développeur full stack web & mobile</h4>
+          <br>
+          <h4>formateur full stack web</h4>
+          <br>
+          <h4>Consultant senior en intégration web</h4>
+          <br>
+          <p>cliquer ici pour voir mon <a href="./images/cv.png" target="_blank" alt="cv kannara kheng">CV</a>
+          </p>
+          <br>
+          
+          <a href="contact.html" class="btn hero-btn">me recruter</a>
+          <!-- social icons -->
+          <ul class="social-icons hero-icons">
+            <li>
+              <a href="https://www.linkedin.com" class="social-icon">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com" class="social-icon">
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.github.com" class="social-icon">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
+        </article>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- about -->
+    <section class="section about">
+      <div class="section-center about-center">
+        <!-- about img -->
+        <article class="about-img">
+          <img
+            src="./images/about-img.jpeg"
+            class="hero-photo"
+            alt="about img"
+          />
+        </article>
+        <!-- about info -->
+        <article class="about-info">
+          <!-- section title -->
+          <div class="section-title about-title">
+            <h2>A propos</h2>
+            <div class="underline"></div>
+          </div>
+          <!--end of section title -->
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+            reiciendis possimus rerum omnis recusandae molestias error
+            consequuntur, doloribus inventore reprehenderit officiis. Dolore
+            aut, repellendus eius fugiat numquam cumque.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae,
+            eum maiores est enim earum fugiat aspernatur. Fuga qui iste amet
+            reiciendis possimus rerum omnis recusandae molestias error
+            consequuntur, doloribus inventore reprehenderit officiis. Dolore
+            aut, repellendus eius fugiat numquam cumque.
+          </p>
+          <a href="about.html" class="btn">a propos de moi</a>
+        </article>
+      </div>
+    </section>
+    <!-- end of about -->
+    <!-- services -->
+    <section class="section bg-grey">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>services</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="services-center section-center">
+        <!-- single service -->
+        <article class="service">
+          <i class="fas fa-code service-icon"></i>
+          <h4>développement web/mobile</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-sketch service-icon"></i>
+          <h4>formation dév. full stack web/mobile</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+        <!-- single service -->
+        <article class="service">
+          <i class="fab fa-android service-icon"></i>
+          <h4>Consulting et Intégration Web</h4>
+          <div class="underline"></div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+            corrupti animi saepe quasi excepturi cupiditate voluptate dolor sed
+            obcaecati vero.
+          </p>
+        </article>
+        <!-- end of single service -->
+      </div>
+    </section>
+    <!-- end of services -->
+    <!-- projects -->
+    <section class="section projects">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>travaux récents</h2>
+        <div class="underline"></div>
+        <p class="projects-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+          repudiandae cupiditate ea facilis incidunt, non sapiente! Debitis
+          magnam, earum assumenda obcaecati cum quaerat facere ratione molestiae
+          dignissimos aliquid blanditiis architecto voluptates delectus
+          voluptate animi nulla! Autem explicabo perspiciatis officia ea.
+        </p>
+      </div>
+      <!--end of section title -->
+      <div class="section-center projects-center">
+        <!-- single project -->
+        <a href="projects.html" class="project-1">
+          <article class="project">
+            <img
+              src="./images/project-1.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Application front-end bancaire avec React</h4>
+              <p>ArgentBank</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+        <!-- single project -->
+        <a href="projects.html" class="project-2">
+          <article class="project">
+            <img
+              src="./images/project-2.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Site e-commerce fleuriste sous React/Tailwind/Express/Postgres</h4>
+              <p>les bruyères</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-3">
+          <article class="project">
+            <img
+              src="./images/project-3.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Optimiser le référencement d'un site</h4>
+              <p>Nina Carducci</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project --><!-- single project -->
+        <a href="projects.html" class="project-4">
+          <article class="project">
+            <img
+              src="./images/project-4.jpeg"
+              alt="single project"
+              class="project-img"
+            />
+            <div class="project-info">
+              <h4>Site front pour composer un menu dans plusieurs restaurants avec Sass</h4>
+              <p>OhMyFood</p>
+            </div>
+          </article>
+        </a>
+        <!-- end of single project -->
+      </div>
+    </section>
+    <!-- end of projects -->
+    <!-- connect -->
+    <section class="connect">
+      <video
+        controls
+        autoplay
+        muted
+        loop
+        class="video-container"
+        poster="./images/project-1.jpeg"
+      >
+        <source src="./videos/connect.mp4" type="video/mp4" />
+        Sorry, your browser does not support embedded videos
+      </video>
+      <div class="video-banner">
+        <!-- section title -->
+        <div class="section-title">
+          <h2>prenons contact</h2>
+          <div class="underline"></div>
+        </div>
+        <!--end of section title -->
+        <p class="video-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni ratione
+          perferendis exercitationem sit. Beatae eius commodi officiis rem
+          soluta ratione dignissimos quisquam tempore laudantium, porro vitae
+          cupiditate dicta magni quas corrupti aperiam, rerum minus odio totam
+          repellendus delectus nostrum veniam!
+        </p>
+        <a href="contact.html" class="btn">me contacter</a>
+      </div>
+    </section>
+    <!-- end of connect -->
+    <!-- skills -->
+    <section class="section skills">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>compétences</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center skills-center">
+        <article>
+          <h3>front end</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>HTML/CSS/Tailwind</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                70%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Javascript</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                70%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>React</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text skill">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+        <article>
+          <h3>back end</h3>
+          <!-- single skill -->
+          <div class="skill">
+            <p>Securité</p>
+            <div class="skill-container">
+              <div class="skill-value"></div>
+              <p class="skill-text">
+                50%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>SGBD Postgres/MySql-ORM Sequelize/Swagger</p>
+            <div class="skill-container">
+              <div class="skill-value value-70"></div>
+              <p class="skill-text skill-text-70">
+                70%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+          <!-- single skill -->
+          <div class="skill">
+            <p>Node/Express</p>
+            <div class="skill-container">
+              <div class="skill-value value-80"></div>
+              <p class="skill-text skill-text-80">
+                80%
+              </p>
+            </div>
+          </div>
+          <!--end of  single skill -->
+        </article>
+      </div>
+    </section>
+    <!-- end of skills -->
+    <!-- timeline -->
+    <section class="section timeline">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>Parcours / formation</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center timeline-center">
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Août 2023 - Mai 2024 Formation Intégrateur Web Ecole OpenClassrooms</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            1
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Sept 2023 - Fév 2024 Formation Développeur full stack Web/Mobile Ecole O'Clock</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            2
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Mars 2023 - Juillet 2023 Formation Développeur d'applications Ecole Philiance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            3
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Sept 1994 - Déc 2022 Consultant confirmé dans la Banque Assurance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            4
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Sept 1993 - Août 1994 Service National au sein de la Marine Nationale</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            5
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+        <!-- single timeline item -->
+        <article class="timeline-item">
+          <h4>Août 1993 - Ingénieur Génie Logiciel Diplômé EPITA Paris</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+            consequuntur voluptates tempore numquam? Quidem incidunt fugit quasi
+            autem, ea excepturi.
+          </p>
+          <span class="number">
+            6
+          </span>
+        </article>
+        <!-- end of  single timeline item -->
+      </div>
+    </section>
+    <!--end of  timeline -->
+    <!-- blog -->
+    <section class="section blog">
+      <!-- section title -->
+      <div class="section-title">
+        <h2>blog</h2>
+        <div class="underline"></div>
+      </div>
+      <!--end of section title -->
+      <div class="section-center blog-center">
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-1.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Tailwind, un accélérateur pour styler votre page</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <p>7 min pour lire</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">lire plus</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-2.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Office 365, votre ami pour le KM</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <p>7 min pour lire</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">lire plus</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-3.jpeg" alt="" />
+            <div class="card-info">
+              <h4>Générer des données de test avec ChatGPT</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <p>7 min pour lire</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">lire plus</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+        <!-- single article -->
+        <div class="card">
+          <!-- front of the card -->
+          <div class="card-side card-front">
+            <img src="./images/project-4.jpeg" alt="" />
+            <div class="card-info">
+              <h4>2024, l'année du snapdragron X pour les PC portables sous Windows</h4>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et
+                nisi ut a est eum tempora dolorum temporibus voluptatibus!
+                Natus, provident.
+              </p>
+              <div class="card-footer">
+                <p>7 min pour lire</p>
+              </div>
+            </div>
+          </div>
+          <!-- card back  -->
+          <div class="card-side card-back">
+            <button class="btn">lire plus</button>
+          </div>
+        </div>
+        <!-- end of single article -->
+      </div>
+    </section>
+    <!--end of  blog -->
+    <!-- footer -->
+    <footer class="footer">
+      <!-- social icons -->
+      <ul class="social-icons">
+        <li>
+          <a href="https://www.linkedin.com" class="social-icon">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com" class="social-icon">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.github.com" class="social-icon">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+
+      <p>&copy; <span id="date"></span> Kannara Kheng. all rights reserved</p>
+    </footer>
+    <script src="./js/app.js"></script>
   </body>
 </html>
